@@ -1,0 +1,389 @@
+/*  Стили для всей страницы  */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /*background: rgb(47,11,176);
+  background: linear-gradient(9deg, rgba(47,11,176,1) 0%, rgba(42,42,187,1) 12%, rgba(26,158,249,1) 59%);*/
+  background: url(..//images/photo_2024-04-08_14-36-19.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 60%;
+  background-position-y: top;
+}
+
+header {
+  display: flex;
+  margin-left: 18%;
+  margin-right: 18%;
+  margin-top: 25%;
+  background: #e0eaef;
+  border-radius: 20px 20px 0px 0px;
+  border-bottom: 0.1px solid #c4d1d8;
+}
+
+/*  Стили для заголовка  */
+header h1 {
+  text-align: left;
+  margin-left: 40px;
+  padding: 40px 0;
+  font-size: 250%;
+  color: #333;
+}
+
+/*  Стили для навигационного меню  */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15%;
+  margin-top: 2%;
+  padding: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+/*  Стили для секций  */
+section {
+  padding: 40px;
+  padding-bottom: 4%;
+  margin-left: 18%;
+  margin-right: 18%;
+  /*border-bottom: 1px solid #ddd;*/
+  background: #EDF2F5;
+}
+
+/*  Стили для заголовков секций  */
+section h2 {
+  font-size: 24px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/*  Стили для параграфов внутри секций  */
+section p {
+  margin-bottom: 20px;
+}
+
+/*  Стили для контактной информации  */
+#contacts p {
+  margin-bottom: 0;
+}
+
+/*  Стили для ссылок в контактах  */
+#contacts a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.img1 {
+  float:right;
+  margin-right:30px;
+  width: 35%;
+  padding: 1%;
+}
+
+.img2 {
+  float:left;
+  width: 59%;
+}
+
+.img3 {
+  width: 20%;
+  float:right;
+  margin-right: 10%;
+}
+
+.img4 {
+  width: 18%;
+  float: left;
+  margin-left: 10%;
+}
+
+.img5 {
+  float: right;
+  width: 40%;
+  margin-right: 4%
+}
+
+.titlelink {
+  display: inline-block;
+  margin: 10px;
+}
+
+.tokpuncts {
+  margin-top: 5%;
+}
+
+.contactsblock{
+  margin: auto;
+  float: right;
+  display: block;
+  text-align: right;
+}
+
+.contactpics {
+  width: 5.5%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.buy-button {
+  background-color: #00aaff; /*  Зеленый фон  */
+  border: none;
+  color: white;
+  padding: 7% 15%;
+  text-align: center;
+  font-size: 120%;
+  margin: auto;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  display: block;
+  border-radius: 10px; /*  Закругленные углы  */
+}
+
+.buy-button:hover {
+  background: url(..//images/kandinsky-download-1712502491199.png);
+  background-size: cover;
+}
+
+.buy-button:active {
+  transform: translateY(4px); /*  Отступ вниз при нажатии  */
+}
+
+.charityamount {
+  background-color: #00aaff; /*  Зеленый фон  */
+  border: none;
+  color: white;
+  padding: 5% 15%;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10%;
+  margin-left: 3%;
+  margin-right: 52%;
+  transition: background-color 0.3s;
+  display: block;
+  border-radius: 10px; /*  Закругленные углы  */
+}
+
+nav h3 {
+  font-size: 150%;
+}
+
+nav p {
+  font-size: 80%;
+}
+
+.btnlink{
+  text-decoration: none;
+}
+
+section h4 {
+  font-size: 110%;
+  text-align: center;
+  margin-bottom: 5%;
+  padding-top: 12%;
+  margin-bottom: 0;
+}
+
+
+
+
+@media (max-width: 600px) {
+
+  body {
+    background-size: 100% 26%;
+    /*background-position-x: 55%;*/
+    background-position-y: -2%;
+  }
+
+  nav {
+    margin-left: 10%;
+  }
+
+  header {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  header h1 {
+    font-size: 85%;
+    margin-top: 5%;
+  }
+
+  .img1 {
+    float: none;
+    margin: 10px auto 20px;
+    width: 80%;
+    display: block;
+  }
+
+  ul li a {
+    display: block;
+  }
+
+  ul a {
+    font-size: 70%;
+    
+  }
+
+  nav ul a {
+    margin-right: 7%;
+  }
+
+  .titlelink {
+    display: block;
+  }
+
+  .contactpics {
+    width: 17%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  .img2 {
+    width: 85%;
+    float: none;
+    display: block;
+    margin: 10px auto 20px
+  }
+
+  .buy-button {
+    padding: 4% 8%;
+    margin-bottom: 20%;
+    font-size: 75%;
+  }
+
+  section h4 {
+    font-size: 70%;
+    text-align: center;
+    margin-bottom: 5%;
+    padding-top: 12%;
+    margin-bottom: 0;
+  }
+
+  .img3 {
+    width: 35%;
+    margin-right: 0;
+  }
+  
+  .img4 {
+    width: 33%;
+    margin-left: 0;
+  }
+
+  .charityamount {
+    margin-top: 4%;
+    padding: 4% 5%;
+  }
+
+  li h3 {
+    font-size: 110%;
+  }
+
+  section {
+    margin-left: 0%;
+    margin-right: 0%;
+    /*border-bottom: 1px solid #ddd;*/
+  }
+
+  .container {
+    padding: 0;  /*  Убираем отступы по бокам  */
+  }
+
+  /*  Ваше содержимое, которое должно быть в центре  */
+  .content {
+    width: 100%;  /*  Занимает всю ширину экрана  */
+    margin: 0 auto; /*  Центрируем содержимое  */
+  }
+
+  .tokpuncts {
+    margin-left: 20%;
+  }
+}
+
+/*  Мобильные устройства и планшеты в портретном режиме  */
+@media (min-width: 600px) and (max-width: 850px) {
+  body {
+    /* background-image: none;  Убираем фоновое изображение  */
+  }
+
+  header {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  .buy-button {
+    font-size: 100%;
+  }
+
+  header h1 {
+    font-size: 150%;
+  }
+
+  section {
+    margin-left: 0%;
+    margin-right: 0%;
+    /*border-bottom: 1px solid #ddd;*/
+  }
+
+  .container {
+    padding: 0;  /*  Убираем отступы по бокам  */
+  }
+
+  /*  Ваше содержимое, которое должно быть в центре  */
+  .content {
+    width: 100%;  /*  Занимает всю ширину экрана  */
+    margin: 0 auto; /*  Центрируем содержимое  */
+  }
+
+  .tokpuncts {
+    margin-bottom: 0;
+  }
+}
+
+/*  Планшеты и ноутбуки в ландшафтном режиме  */
+@media (min-width: 850px) and (max-width: 1024px) {
+    body {
+      /* background-image: none;  Убираем фоновое изображение  */
+    }
+
+    header {
+      margin-left: 0%;
+      margin-right: 0%;
+    }
+
+    header h1 {
+      font-size: 200%;
+    }
+
+    section {
+      margin-left: 0%;
+      margin-right: 0%;
+      /*border-bottom: 1px solid #ddd;*/
+    }
+
+    .container {
+      padding: 0;  /*  Убираем отступы по бокам  */
+    }
+
+    /*  Ваше содержимое, которое должно быть в центре  */
+    .content {
+      width: 100%;  /*  Занимает всю ширину экрана  */
+      margin: 0 auto; /*  Центрируем содержимое  */
+    }
+
+    .tokpuncts {
+      margin-bottom: 0;
+    }
+  }
+
+/*  Большие экраны  */
+@media (min-width: 1025px) {
+  /*  Здесь могут быть специфические стили для больших экранов  */
+}
